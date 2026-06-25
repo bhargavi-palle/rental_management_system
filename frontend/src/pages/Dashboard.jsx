@@ -13,15 +13,15 @@ function Dashboard() {
   const fetchData = async () => {
     try {
       const propertyRes = await axios.get(
-        "http://localhost:5000/api/properties"
+        "https://rental-management-system-j8qk.onrender.com/api/properties"
       );
 
       const tenantRes = await axios.get(
-        "http://localhost:5000/api/tenants"
+        "https://rental-management-system-j8qk.onrender.com/api/tenants"
       );
 
       const paymentRes = await axios.get(
-        "http://localhost:5000/api/payments"
+        "https://rental-management-system-j8qk.onrender.com/api/payments"
       );
 
       setProperties(propertyRes.data);

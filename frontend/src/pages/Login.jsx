@@ -11,7 +11,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/login",
+        "https://rental-management-system-j8qk.onrender.com/api/login",
         {
           email,
           password,
